@@ -3,19 +3,22 @@
 
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0;}
+body, html { font-size: 100%; padding: 0; margin: 0; }
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 
-body {
+body {,
 	font-family: 'Lato',Arial, sans-serif;
-	color: #777;
+    background: #00ffb2;
+    background-image: url("../img/zenbg-1.png"), url("../img/zenbg-2.png");
+    background-repeat: repeat-x, repeat;
+	color:  rgb(0, 0, 0);
 	font-size: 16px;
 	line-height: 1.6;
 }
 
 a {
-	color: #539f10;
+	color: #101F03;
 	text-decoration: none;
 }
 
@@ -24,14 +27,14 @@ a:active {
 	color: #111;
 }
 h1.site-title a{
-	color:#555; 
+	color:rgb(0, 0, 0);
 }
 
 h2{
 	font-family: 'Bitter',Georgia,serif; 
 	font-size: 40px;
 	font-weight: 900;
-	color: #222;
+	color: rgb(0, 0, 0);
 	margin:0px;
 	line-height: 1.2;
 	margin-bottom: 20px;
@@ -58,7 +61,7 @@ h2{
 }
 
 header.top{
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid black;
 	margin-bottom: 50px;
 }
 
@@ -102,9 +105,9 @@ nav.effects ul li{
 }
 
 nav.effects ul li a{
-	border: 2px solid #539f10;
+	border: 2px solid black;
 	padding: 10px 20px;
-	color: #539f10;
+	color: black;
 	opacity: 0.8;
 }
 
@@ -127,7 +130,7 @@ span.icon{
 footer.footer{
 	text-align: center;
 	padding: 50px 0px 20px;
-	border-top:1px solid #eee;
+	border-top:1px solid black;
 }
 
 
