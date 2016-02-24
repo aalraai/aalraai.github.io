@@ -7,10 +7,10 @@
         <meta name="author" content="Akram Alraai">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-        <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/league.css" id="theme">
+        <link rel="stylesheet" href="presentation/css/reveal.css">
+        <link rel="stylesheet" href="presentation/css/theme/league.css" id="theme">
 
-        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="presentation/lib/css/zenburn.css">
 
         <!-- Printing and PDF exports -->
         <script>
@@ -24,11 +24,18 @@
 <body>
 
         <div class="reveal">
-                Dies ist nur ein Test!
+                <div class="slides">
+                        <section>
+                                Dies ist doch nur ein Test!
+                        </section>
+                        <section>
+                                Dies ist nur ein weiterer Test!
+                        </section>
+                </div>
         </div>
 
-        <script src="lib/js/head.min.js"></script>
-        <script src="js/reveal.js"></script>
+        <script src="presentation/lib/js/head.min.js"></script>
+        <script src="presentation/js/reveal.js"></script>
 
         <script>
 
@@ -40,16 +47,16 @@
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
 
 				// Optional reveal.js plugins
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'presentation/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'presentation/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'presentation/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'presentation/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'presentation/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'presentation/plugin/notes/notes.js', async: true }
 				]
 			});
 
