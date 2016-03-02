@@ -210,7 +210,7 @@ html:-moz-full-screen-ancestor {
   border-right-color: #000; }
 
 .reveal .controls .navigate-left.fragmented {
-  opacity: 0.3; }
+  opacity: 1; }
 
 .reveal .controls .navigate-right {
   left: 74px;
@@ -219,7 +219,7 @@ html:-moz-full-screen-ancestor {
   border-left-color: #000; }
 
 .reveal .controls .navigate-right.fragmented {
-  opacity: 0.3; }
+  opacity: 1; }
 
 .reveal .controls .navigate-up {
   left: 42px;
@@ -227,7 +227,7 @@ html:-moz-full-screen-ancestor {
   border-bottom-color: #000; }
 
 .reveal .controls .navigate-up.fragmented {
-  opacity: 0.3; }
+  opacity: 1; }
 
 .reveal .controls .navigate-down {
   left: 42px;
@@ -236,7 +236,7 @@ html:-moz-full-screen-ancestor {
   border-top-color: #000; }
 
 .reveal .controls .navigate-down.fragmented {
-  opacity: 0.3; }
+  opacity: 1; }
 
 /*********************************************
  * PROGRESS BAR

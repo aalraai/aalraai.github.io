@@ -1,135 +1,246 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-        <meta charset="UTF-8">
-        <title>Präsentation</title>
+  <meta charset="UTF-8">
+  <title>Präsentation</title>
 
-        <meta name="author" content="Akram Alraai">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="author" content="Akram Alraai">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-        <link rel="stylesheet" href="presentation/css/reveal.css">
-        <link rel="stylesheet" href="presentation/css/theme/league.css" id="theme">
+  <link rel="stylesheet" href="presentation/css/reveal.css">
+  <link rel="stylesheet" href="presentation/css/foo.css">
+  <link rel="stylesheet" href="presentation/css/theme/league.css" id="theme">
 
-        <link rel="stylesheet" href="presentation/lib/css/zenburn.css">
+  <link rel="stylesheet" href="presentation/lib/css/zenburn.css">
 
-        <!-- Printing and PDF exports -->
-        <script>
-                var link = document.createElement('link');
- 	            link.rel = 'stylesheet';
-			    link.type = 'text/css';
-			    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			    document.getElementsByTagName( 'head' )[0].appendChild( link );
-        </script>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
 </head>
+
 <body>
 
-        <div class="reveal">
-                <div class="slides">
-                        <section>
-                                <p class="fragment shrink">
-                                        Die Pfeiltasten
-                                        <img width="50" height="50" alt="Right arrow" src="presentation/img/Right.png">
-                                        <img width="50" height="50" alt="Down arrow" src="presentation/img/Down.png"> zum navigieren benutzen.
-                                </p>
-                                <p class="fragment visible"> Eine subjektive Ansicht über die Umsetzung einer Webseite von Akram Alraai</p>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        Die Pfeiltasten
+        <img width="50" height="50" alt="Right arrow" src="presentation/img/Right.png">
+        <img width="50" height="50" alt="Down arrow" src="presentation/img/Down.png"> zum navigieren benutzen
+      </section>
+      <section>
+        Eine subjektive Ansicht über die Umsetzung einer Webseite von Akram Alraai
+      </section>
+      <section>
+        <p class=" fragment shrink" style="color: #754E41;">Bevor solch ein komplexes Projekt angegangen wird, sollte man sich folgende Fragen stellen..</p>
+        <ul>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">Moderne oder eher konservative Webseite?</p>
+          </li>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">Welche Technologien für Backend / Frontend?</p>
+          </li>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">Wie kann man das bestehende Konzept sinnvoll erweitern?</p>
+          </li>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">Welche Ideen lassen sich auf den ersten Blick nicht so leicht realisieren?</p>
+          </li>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">Langfristige Planung und Kostenpunkt?</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <section>
+          <p class="fragment shrink" style="color: #754E41;">Moderne oder eher konservative Webseite?</p>
+          <p class="fragment visible" style="font-size:20px;">In der Welt der Webentwicklung sollte man stets einen modernen Ansatz wählen. Denn:</p>
+          <p class="fragment visible" cite="http://www.heinerfischle.de/meinung/sprueche.htm"> "Gehe mit der Zeit, sonst gehst du mit der Zeit!"</p>
+          <p class="fragment visible" style="font-size:20px;">Doch was ist ein moderner Ansatz?</p>
+          <p class="fragment visible"><img width="178" height="238" alt="Down arrow" src="presentation/img/arrow.png"></p>
+        </section>
+        <section>
+          <p style="font-size:30px;">Beispiele moderner Webseiten, e.g. <a href="https://www.askcharlie.de/">AskCharlie</a>, <a href="http://slides.com/">Slid.es</a>,
+            <a href="http://worldsfairusa.com/">Worldsfairusa</a>, <a href="http://amsdesign.nl/">Amsdesign</a>, <a href="https://onepagelove.com/">uvm.</a> Mit einfachen Mitteln kann man einen positiven Eindruck beim User hinterlassen. Die Stärken liegen
+            auf der Hand: Die Einfachheit der Bedienung. Der User muss nicht über mehrere Ebenen navigieren, wodurch er die Inahlte der Seite bewusster wahrnehmen kann. Gleichzeitig hat er die volle Kontrolle über die Geschwindigkeit, mit der die Informationen
+            auf ihn einströmen, im Gegensatz zu vielen anderen dynamischen Techniken.
+          </p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <p class="fragment shrink" style="color: #754E41;">Welche Technologien für Backend /Frontend?</p>
+          <p class="fragment visible"><img width="178" height="238" alt="Down arrow" src="presentation/img/arrow.png"></p>
+        </section>
+        <section>
+          <p class="fragment shrink" style="color: #754E41;">Backend</p>
+          <p class="fragment visible"><img width="800" height="250" alt="Backend dev logo" src="presentation/img/Back-end-dev-logo.png"></p>
+          <ul>
+            <li class="1">
+              <p class="fragment visible" style="font-size:20px;">Datenbank: MySQL, SQLite und/oder MongoDB</p>
+            </li>
+            <li class="2">
+              <p class="fragment visible" style="font-size:20px;">Server: Vorerst Amazon Web Services, später eigenen Server (e.g. Apache, J2EE)</p>
+            </li>
+            <li class="3">
+              <p class="fragment visible" style="font-size:20px;">Framework: Ruby on Rails (Ruby) oder Zend Framework (PHP)</p>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <p class="fragment shrink" style="color: #754E41;">Frontend</p>
+          <p class="fragment visible" style="font-size:20px;">Grundgerüst:</p>
+          <p class="fragment visible"><img width="400" height="150" alt="Backend dev logo" src="presentation/img/hjscss.png"></p>
+          <p class="fragment visible" style="font-size:20px;">Diverse 3rd-Party-Services:</p>
+          <p class="fragment visible">
+            <img width="125" height="125" alt="react" src="presentation/img/react.png">
+            <img width="125" height="125" alt="ember" src="presentation/img/emberjs.png">
+            <img width="125" height="125" alt="jquery" src="presentation/img/JQuery.svg">
+            <img width="125" height="125" alt="angularjsp" src="presentation/img/angularjs.png">
+            <img width="125" height="125" alt="bootstrap" src="presentation/img/bootstrap.jpg">
+            <img width="125" height="125" alt="webpack" src="presentation/img/webpack.png">
+          </p>
+        </section>
+      </section>
+      <section>
+        <p class="fragment shrink" style="color: #754E41;">Wie kann man das bestehende Konzept sinnvoll erweitern?</p>
+        <ul>
+          <li class="1">
+            <p class="fragment visible" style="font-size:20px;">
+              Login und Registrierung auch per Facebook / Twitter möglich
+            </p>
+          </li>
+          <li class="2">
+            <p class="fragment visible" style="font-size:20px;">
+              Bezahlmethoden via Paypal / Giropay; Käuferschutz, sichere Bezahlmethode
+            </p>
+          </li>
+          <li class="3">
+            <p class="fragment visible" style="font-size:20px;">
+              Erstellung einer Lerngruppe innerhalb einer Umgebung (z.B. innerhalb 10km); die sich eigenständig zu einem Treffen verabreden
+            </p>
+          </li>
+          <li class="4">
+            <p class="fragment visible" style="font-size:20px;">
+              Erweiterung einer Mobilen-App; Kalenderintegration, Push-Erinnerungsfunktion uvm.
+            </p>
+          </li>
+          <li class="5">
+            <p class="fragment visible" style="font-size:20px;">
+              Interaktive Videoeinbindung, i.e. <a href="https://h5p.org/interactive-video">hp5 interactive video</a>
+            </p>
+          </li>
+          <li class="6">
+            <p class="fragment visible" style="font-size:20px;">
+              Intelligente Such- und Filterfunktion
+            </p>
+          </li>
+          <li class="7">
+            <p class="fragment visible" style="font-size:20px;">
+              Telefonakquise und Prozessoptimierung anhand von Feedback-Gesprächen durch Sales-Mitarbeiter
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <p class="fragment shrink" style="color: #754E41;">Welche Ideen lassen sich auf den ersten Blick nicht so leicht realisieren?</p>
+        <ul>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">
+              Like-Button eines hochgeladenen Videos
+            </p>
+          </li>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">
+              Komplexer Gruppenchat
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <p class="fragment shrink" style="color: #754E41;">Langfristige Planung (ca. ein Jahr nach Gründung) und Kostenpunkt?</p>
+        <ul>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">
+              Backend-Entwickler: ca. 3500€ (Brutto)
+            </p>
+          </li>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">
+              Web Designer (freelancer): ca. 1200-3000€ (einmalig)
+            </p>
+          </li>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">
+              Mobile-App-Entwickler (freelancer): ca. 2000€ (einmailig)
+            </p>
+          </li>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">
+              Amazon Web Service (vorerst): ca. 50-100€
+            </p>
+          </li>
+          <li>
+            <p class="fragment visible" style="font-size:20px;">
+              Sales-Mitarbeiter: ca. 2000€ (Brutto)
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <img width="800" height="600" alt="danke" src="presentation/img/thank-you.jpg">
+      </section>
+    </div>
+  </div>
 
-                        </section>
-                        <section>
-                                <p class=" fragment shrink" style="color: #FA7000;">Bevor solch ein komplexes Projekt angegangen wird, sollte man sich folgende Fragen stellen..</p>
-                                <p class="fragment visible">Moderne oder eher konservative Webseite?</p>
-                                <p class="fragment visible">Welche Technologien für Backend / Frontend?</p>
-                                <p class="fragment visible">Wie kann man das bestehende Konzept sinnvoll erweitern?</p>
-                                <p class="fragment visible">Welche Ideen lassen sich auf den ersten Blick nicht so leicht realisieren?</p>
-                                <p class="fragment visible">Was kostet der Spaß?</p>
+  <script src="presentation/lib/js/head.min.js"></script>
+  <script src="presentation/js/reveal.js"></script>
 
-                        </section>
-                        <section>
-                                <section>
-                                        <p class="fragment shrink" style="color: #FA7000;">Moderne oder eher konservative Webseite?</p>
-                                        <p class="fragment visible">In der Welt der Webentwicklung sollte man stets einen modernen Ansatz wählen. Denn:</p>
-                                        <p class="fragment visible" cite="http://www.heinerfischle.de/meinung/sprueche.htm"> "Gehe mit der Zeit, sonst gehst du mit der Zeit!"</p>
-                                        <p class="fragment visible" style="color: #19B0E3;">Doch was ist ein moderner Ansatz?</p>
-                                        <p class="fragment visible"><img width="178" height="238" alt="Down arrow" src="presentation/img/arrow.png"></p>
-                                </section>
-                                <section>
-                                        <p>Beispiele moderner Webseiten, e.g. <a href="https://www.askcharlie.de/">AskCharlie</a>, <a href="http://slides.com/">Slid.es</a>,
-                                                <a href="http://worldsfairusa.com/">Worldsfairusa</a>, <a href="http://amsdesign.nl/">Amsdesign</a>, <a href="https://onepagelove.com/">uvm.</a>
-                                                Mit einfachen Mitteln kann man einen positiven Eindruck beim User hinterlassen. Die Stärken liegen auf der Hand: Die Einfachheit der Bedienung.
-                                                Der User muss nicht über mehrere Ebenen navigieren, wodurch er die Inahlte der Seite bewusster wahrnehmen kann.  Gleichzeitig hat er die volle
-                                                Kontrolle über die Geschwindigkeit, mit der die Informationen auf ihn einströmen, im Gegensatz zu vielen anderen dynamischen Techniken.
-                                        </p>
-                                </section>
-                        </section>
-                        <section>
-                                <section>
-                                        <p class="fragment shrink" style="color: #FA7000;">Welche Technologien für Backend /Frontend?</p>
-                                        <p class="fragment current-visible"><img width="178" height="238" alt="Down arrow" src="presentation/img/arrow.png"></p>
-                                </section>
-                                <section>
-                                        <p class="fragment shrink" style="color: #FA7000;">Backend</p>
-                                        <p class="fragment visible"><img width="800" height="250" alt="Backend dev logo" src="presentation/img/Back-end-dev-logo.png"></p>
-                                        <p class="fragment shrink"><p class="fragment visible">Databse: MySQL, SQLite und MongoDB</p></p>
-                                        <p class="fragment visible">Server: Vorerst Amazon Web Services, später eigene Server ( e.g. Apache, J2EE)</p>
-                                        <p class="fragment visible">Framework: Ruby on Rails (Ruby) oder Zend Framework (PHP)</p>
-                                </section>
-                                <section>
-                                        <p class="fragment shrink" style="color: #FA7000;">Frontend</p>
-                                        <p class="fragment visible"><img width="200" height="200" alt="Backend dev logo" src="presentation/img/hjscss.png"></p>
-                                        <p class="fragment visible">
-                                                <img width="200" height="200" alt="react" src="presentation/img/react.png">
-                                                <img width="200" height="200" alt="jquery" src="presentation/img/JQuery.svg">
-                                                <img width="200" height="200" alt="angularjsp" src="presentation/img/angularjs.png">
-                                                <img width="200" height="200" alt="bootstrap" src="presentation/img/bootstrap.jpg">
-                                        </p>
-                                </section>
-                        </section>
-                        <section>
-                                <p class="fragment shrink" style="color: #FA7000;">Wie kann man das bestehende Konzept sinnvoll erweitern?</p>
-                                <p>
-                        </section>
-                        <section>
-                                <p class="fragment shrink" style="color: #FA7000;">Welche Ideen lassen sich auf den ersten Blick nicht so leicht realisieren?</p>
-                        </section>
-                        <section>
-                                <p class="fragment grow">grow</p>
-                                <p class="fragment shrink">shrink</p>
-                                <p class="fragment fade-out">fade-out</p>
-                                <p class="fragment current-visible">visible only once</p>
-                                <p class="fragment highlight-current-blue">blue only once</p>
-                                <p class="fragment highlight-red">highlight-red</p>
-                                <p class="fragment highlight-green">highlight-green</p>
-                                <p class="fragment highlight-blue">highlight-blue</p>
-                        </section>
-                        <section>
-                                Inhalt diese Präsentation
-                        </section>
-                </div>
-        </div>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
 
-        <script src="presentation/lib/js/head.min.js"></script>
-        <script src="presentation/js/reveal.js"></script>
+      transition: 'fade', // none/fade/slide/convex/concave/zoom
 
-        <script>
-
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'convex', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'presentation/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'presentation/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'presentation/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'presentation/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'presentation/plugin/zoom-js/zoom.js', async: true },
-					{ src: 'presentation/plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
+      // Optional reveal.js plugins
+      dependencies: [{
+        src: 'presentation/lib/js/classList.js',
+        condition: function() {
+          return !document.body.classList;
+        }
+      }, {
+        src: 'presentation/plugin/markdown/marked.js',
+        condition: function() {
+          return !!document.querySelector('[data-markdown]');
+        }
+      }, {
+        src: 'presentation/plugin/markdown/markdown.js',
+        condition: function() {
+          return !!document.querySelector('[data-markdown]');
+        }
+      }, {
+        src: 'presentation/plugin/highlight/highlight.js',
+        async: true,
+        callback: function() {
+          hljs.initHighlightingOnLoad();
+        }
+      }, {
+        src: 'presentation/plugin/zoom-js/zoom.js',
+        async: true
+      }, {
+        src: 'presentation/plugin/notes/notes.js',
+        async: true
+      }]
+    });
+  </script>
 </body>
+
 </html>
