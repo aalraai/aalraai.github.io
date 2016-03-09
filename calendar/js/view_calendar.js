@@ -16,7 +16,6 @@ function initialise_buttons() {
   $('.btn').button();
 }
 
-
 /* Binds and initialises event generation functionality */
 function initialise_event_generation() {
 
@@ -142,7 +141,6 @@ function initialise_calendar() {
   //Initialise external events
   initialise_external_event('.external-event');
 }
-
 
 /* Handle an external event that has been dropped on the calendar */
 function external_event_dropped(date, all_day, external_event) {
