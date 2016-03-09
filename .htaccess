@@ -2,5 +2,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
-RewriteRule ^([^\.]+)$ $1.htm [NC,L]
 # Replace html with your file extension, eg: php, htm, asp
