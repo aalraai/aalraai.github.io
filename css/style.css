@@ -29,7 +29,6 @@ a:hover {
 }
 
 
-
 i:hover{
   color: #fc3565;
 }
@@ -94,6 +93,7 @@ padding-top:5rem;
 .text-style{
   color: #AD9E9E;
   font-size: 1.8rem;
+  display: none;
 }
 /* Mobile first queries */
 
