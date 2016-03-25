@@ -28,6 +28,12 @@ a:hover {
   color: #fc3565;
 }
 
+
+
+i:hover{
+  color: #fc3565;
+}
+
 h1 {
   color: #fc3565;
   padding-bottom: 0px;
@@ -66,7 +72,7 @@ h2 {
 }
 
 .pulled ul li span{
-  font-size:1.2rem;
+  font-size:5rem;
 }
 
 .footer{
@@ -78,7 +84,17 @@ padding-top:5rem;
   font-size:1.2rem;
 }
 
+.footer ul li {
+  display: inline;
+  position: relative;
+  margin: 10px;
+}
 
+
+.text-style{
+  color: #AD9E9E;
+  font-size: 1.8rem;
+}
 /* Mobile first queries */
 
 
