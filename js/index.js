@@ -2,7 +2,19 @@
 
 $(document).ready(function(){
   $(".fa-code").hover(function(){
-    $("p").slideToggle("slow", function(){
+    $("#one").slideToggle("slow", function(){
+    });
+  });
+  $(".fa-cogs").hover(function(){
+    $("#two").slideToggle("slow", function(){
+    });
+  });
+  $(".fa-database").hover(function(){
+    $("#three").slideToggle("slow", function(){
+    });
+  });
+  $(".fa-wrench").hover(function(){
+    $("#four").slideToggle("slow", function(){
     });
   });
 
